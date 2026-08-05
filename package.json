@@ -1,11 +1,11 @@
 {
   "name": "projeto",
   "version": "1.0.0",
-  "description": "",
   "main": "src/server.js",
   "scripts": {
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
+    "build": "prisma generate && prisma migrate deplay",
     "prisma:generate": "prisma genererate",
     "prisma:migrate": "prisma migrate dev",
     "prisma:studio": "prisma studio",
