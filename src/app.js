@@ -21,8 +21,8 @@ app.use(
 app.use(express.json());
 
 app.get('/health', async (req, res) =>{
-    const user = await prisma.user.count();
-    const guests = await priams.guests.count();
+    const users = await prisma.user.count();
+    const guests = await prisma.guests.count();
     return res.status(200).json({
         status: 'ok',
         users,
