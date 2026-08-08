@@ -20,9 +20,9 @@ app.use(
 
 app.use(express.json());
 
-app.get('/health', async (req, res) =>{
+app.get('/health', async (req, res) => {
     const users = await prisma.user.count();
-    const guests = await prisma.guests.count();
+    const guests = await prisma.guest.count();
     return res.status(200).json({
         status: 'ok',
         users,
