@@ -5,12 +5,13 @@
   "scripts": {
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
-    "build": "prisma generate && prisma migrate deplay",
+    "build": "prisma generate && prisma migrate deploy",
     "prisma:generate": "prisma genererate",
     "prisma:migrate": "prisma migrate dev",
     "prisma:studio": "prisma studio",
     "prisma:format": "prisma format",
-    "seed": "node prisma/seed.js"
+    "seed": "node prisma/seed.js",
+    "test": "node --test"
   },
   "keywords": [],
   "author": "",
